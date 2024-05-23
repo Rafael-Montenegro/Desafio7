@@ -1,204 +1,208 @@
-*{
-    margin: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  box-sizing: border-box;
 }
-h1, p, li, a{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+h1,
+p,
+li,
+a {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-body{
-    display: grid;
-    grid-template-areas: 
+body {
+  display: grid;
+  grid-template-areas:
     "header"
     "section"
     "main"
     "footer";
-    grid-template-rows: 100px 85px 1fr 90px;
-    height: 100vh;
+  grid-template-rows: 100px 85px 1fr 90px;
+  height: 100vh;
 
-    header{
-        grid-area: header;
-        background-color: rgb(29, 19, 101);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 30px;
+  header {
+    grid-area: header;
+    background-color: rgb(29, 19, 101);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
 
-        h1{
-            color: white;
-            padding-left: 5px;
-        }
-        i{
-            color: white;
-            font-size: 30px;
-        }
-        ul{
-            color: white;
-            display: none; 
-            list-style: none;
-            gap: 15px;
-        }
+    h1 {
+      color: white;
+      padding-left: 5px;
+    }
+    i {
+      color: white;
+      font-size: 30px;
+    }
+    ul {
+      color: white;
+      display: none;
+      list-style: none;
+      gap: 15px;
+    }
 
-        .title{
-            display: flex;
-            align-items: center;
-        }
+    .title {
+      display: flex;
+      align-items: center;
     }
-    section{
-        grid-area: section;
-        background-color: rgb(230, 230, 230);
-        padding: 30px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        p{
-            font-size: 20px;
-        }
-        #order{
-            padding: 10px;
-        }
+  }
+  section {
+    grid-area: section;
+    background-color: rgb(230, 230, 230);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    p {
+      font-size: 20px;
     }
-    main{
-        grid-area: main;
-        background-color: white;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        .main_content{
-            overflow-y: hidden;
-        }
-        .card{
-            margin-top: 30px;
-            padding: 20px;
-            border-radius: 5px;
-            border: solid 1px rgb(214, 214, 214);
-        }
-        .card_img{
-            width: auto;
-        }
-        .card_info{
-            font-size: larger;
-            font-weight: bolder;
-            margin-top: 10px;
-        }
-        .card_btn{
-            padding: 10px 25px;
-            color: white;
-            background-color: rgb(35, 23, 121);
-            margin-top: 5px;
-        }
-        button:hover{
-            cursor: pointer;
-        }
-        p{
-            font-weight: 600;
-        }
-        .album{
-            font-weight: lighter;
-        }
-        .pagination {
-            display: inline-block;
-            margin: auto;
-        }  
-        .pagination a {
-            color: rgb(59, 52, 191);
-            float: left;
-            padding: 10px 20px;
-            text-decoration: none;
-            transition: background-color .3s;
-            border: 1px solid #ddd;
-        }
+    #order {
+      padding: 10px;
     }
-    footer{
-        grid-area: footer;
-        background-color: rgb(29, 19, 101);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        p{
-            color: white;
-            font-size: larger;
-        }
-        i{
-            color: white;
-            font-size: 30px;
-            padding-left: 20px;
-            padding-bottom: 10px;
-            cursor: pointer;
-        }
+  }
+  main {
+    grid-area: main;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    .main_content {
+      overflow-y: hidden;
     }
+    .card {
+      margin-top: 30px;
+      padding: 20px;
+      border-radius: 5px;
+      border: solid 1px rgb(214, 214, 214);
+    }
+    .card_img {
+      width: auto;
+    }
+    .card_info {
+      font-size: larger;
+      font-weight: bolder;
+      margin-top: 10px;
+    }
+    .card_btn {
+      padding: 10px 25px;
+      color: white;
+      background-color: rgb(35, 23, 121);
+      margin-top: 5px;
+    }
+    button:hover {
+      cursor: pointer;
+    }
+    p {
+      font-weight: 600;
+    }
+    .album {
+      font-weight: lighter;
+    }
+    .pagination {
+      display: inline-block;
+      margin: auto;
+    }
+    .pagination a {
+      color: rgb(59, 52, 191);
+      float: left;
+      padding: 10px 20px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+      border: 1px solid #ddd;
+    }
+  }
+  footer {
+    grid-area: footer;
+    background-color: rgb(29, 19, 101);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p {
+      color: white;
+      font-size: larger;
+    }
+    i {
+      color: white;
+      font-size: 30px;
+      padding-left: 20px;
+      padding-bottom: 10px;
+      cursor: pointer;
+    }
+  }
 }
-@media (max-width: 576px){
-    .cards{
-        display: none;
-    }
-    .pagination{
-        padding: 30px;
-    }
-    footer{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
+@media (max-width: 576px) {
+  .cards {
+    display: none;
+  }
+  .pagination {
+    padding: 30px;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 @media (min-width: 576px) {
-    body{
-        max-height: 100vh;
-        grid-template-areas:
-        "header section"
-        "header main"
-        "header main"
-        "footer main";
-        grid-template-columns: 1fr 3fr;
-        grid-template-rows: 1fr 6fr 3fr 2fr;
-        header{
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            text-align: center;
-            .fa-bars{
-                display: none;
-            }
-            ul{
-                display: flex !important;
-                flex-direction: column;
-                font-size: 22px;
-                cursor: pointer;
-                margin-top: 30px;
-                padding-right: 15px;
-            }
-        }
-        section{
-            height: 90px;
-            #order{
-                width: 100%;
-            }
-        }
-        main{
-            .main_content{
-                display: flex;
-                flex-direction: row;
-                justify-content: space-evenly;
-                flex-wrap: wrap;
-                overflow-y: scroll;
-            }
-            img{
-                height: 250px;
-                width: auto;
-            }
-            .pagination{
-                margin: 40px;
-            }
-        }
-        footer{
-            background-color: rgb(19, 12, 69);
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
+  body {
+    max-height: 100vh;
+    grid-template-areas:
+      "header section"
+      "header main"
+      "header main"
+      "footer main";
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 6fr 3fr 2fr;
+    header {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      text-align: center;
+      .fa-bars {
+        display: none;
+      }
+      ul {
+        display: flex !important;
+        flex-direction: column;
+        font-size: 22px;
+        cursor: pointer;
+        margin-top: 30px;
+        padding-right: 15px;
+      }
     }
+    section {
+      height: 90px;
+      #order {
+        width: 100%;
+      }
+    }
+    main {
+      .main_content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        overflow-y: scroll;
+      }
+      img {
+        height: 250px;
+        width: auto;
+      }
+      .pagination {
+        margin: 40px;
+      }
+    }
+    footer {
+      background-color: rgb(19, 12, 69);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 }
